@@ -1,0 +1,11 @@
+# Before Course: Setup
+docker run -d --name lb01 -t ubuntu
+docker run -d --name app01 -t ubuntu
+docker run -d --name app02 -t ubuntu
+docker run -d --name db01 -t ubuntu
+
+# After Course
+docker rm -f lb01
+docker rm -f app02
+docker rm -f app01
+docker rm -f db01
